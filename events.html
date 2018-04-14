@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mountain Biking in Bozeman, MT | The Mountain Spoke</title>
+        <meta name="author" content="Aimee Tolman">
+        <meta name="description" content="Come experience everything you love about mountain biking in Bozeman, MT.">
+        <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Allan" rel="stylesheet">  <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header>
+            <img id="smlogo" class="logo" src="images/logo2.png" alt="The Mountain Spoke logo with orange lettering."> 
+            
+            <img class="header" src="images/adventure-bikers-bikes-163407-2-1200-44.jpg" alt="Mountain bikers on a trail in the hills." sizes="100vw"
+                 srcset="images/adventure-bikers-bikes-163407-2-400-98.jpg 400w,
+                        images/adventure-bikers-bikes-163407-2-800-74.jpg 800w,
+                        images/adventure-bikers-bikes-163407-2-1200-44.jpg 1200w">  
+            
+            <img id="lglogo" class="logo" src="images/logo2.png" alt="The Mountain Spoke logo with orange lettering.">
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id=primaryNav class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventuretours.html">Adventure Tours</a></li>
+                <li class="active"><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Bicycles</a></li>
+                <li><a href="repairs.html">Repair Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>		
+        </nav>
+
+        <main>
+            <section class="content">
+                <article class="greatdivide">
+                    <h1>Cycle the Continental Divide!</h1>
+                    <p class="description">Come join bike enthusiasts from around the world to celebrate the 20th anniversary of the USA Continental Divide! It's the opportunity of a lifetime to see the wilds of the country and experience its geography in a way like no other.</p>
+                    <img src="images/Great_Divide_Mountain_Bike_Route.gif" sizes="80vw">
+                    <section class="dividedetails">
+                        <h2>Details</h2>
+                        <p><b>The Great Divide is a nearly 3,000 mile route spanning from Banff, Canada, to Antelope Wells, New Mexico.</b> It's rigorous! It's remote! And it will be the most breath-taking weeks of your life. The trip is broken up into 7, week-long sections, each week concluding with a day off the bikes for rest, relaxation, or tourism.</p>
+                        <p><b>The tour group will be supported by two vans containing food, equipment, and yes, a mechanic.</b> The vans will be available the majority of the trip, excepting the portions of the trail that deny vehicle access. During those portions, we will make sure you're loaded up with everything you need, and you will have guides at your disposal in case of emergency.</p>
+                    </section>
+                    <section class="price">
+                        <h2>Pricing</h2>
+                        <p><b>The total cost of the full, 7-week tour is $9,600.</b> Cost includes all food and emergency equipment, as well as 17 nights at motels.</p>
+                    </section>
+                </article>
+
+                <form>
+                    <h1>Register Now!</h1>
+                    <fieldset>
+                        Full Name:<br>  
+                        <input type="text" name="fullname" minlength="5" pattern="[/s-A-Za-z]" title="Full name must be a minimum of five characters and cannot include numbers or special characters, e.g. John Smith" required><br><br>
+                        Email:<br>  
+                        <input type="email" name="email" placeholder="email@example.com"><br><br>
+                        Telephone:<br>  
+                        <input type="tel" name="usrtel" required><br><br>
+                        Date of Birth:<br>
+                        <input type="date" name="bday" required><br><br>
+                        Home Country:<br>
+                        <input type="text" name="country" required><br>
+                        <p>Special Accommodations or Comments:<br>
+                        <textarea name="comments" rows="10" cols="30"></textarea></p>
+                        <input class="button" type="submit" value="Sign me up!"><br>
+                    </fieldset><br>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <aside>
+                <img src="images/logo3.png" alt="The Mountain Spoke logo with white lettering.">
+                <p><a id="ref" href="references.html">See Site References</a></p>
+            </aside>
+            
+            <p class="footer-bar">The Mountain Spoke | &copy;2018 All Rights Reserved | 3950 Valley Commons Drive, Bozeman, MT 82883 | 999-999-9999</p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+
+    </body>
+</html>
